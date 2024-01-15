@@ -30,7 +30,7 @@ namespace JwtStore.Core.AccountContet.ValueObjects
 
         public static implicit operator Email(string adress) => new Email(adress);
 
-        public override string ToString() => Adress.Trim().ToLower();
+        public override string ToString() => Adress;
 
         [GeneratedRegex(Pattern)]
         private static partial Regex EmailRegex();
